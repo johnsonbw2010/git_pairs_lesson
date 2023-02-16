@@ -14,7 +14,11 @@ class BankAccount
   end
 
   def withdraw(amount)
+    if @balance < amount
+      puts "you're too broke!"
+    else
     @balance = @balance - amount
+    end
   end
 
   def verify?(id, pin)
