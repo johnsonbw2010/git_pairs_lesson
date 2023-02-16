@@ -14,8 +14,7 @@ class BankAccount
   end
 
   def withdraw(amount)
-    # require 'pry'; binding.pry
-    @balance -= amount
+    @balance = @balance - amount
   end
 
   def verify?(id, pin)
